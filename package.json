@@ -1,0 +1,30 @@
+{
+  "name": "mall",
+  "version": "1.0.0",
+  "description": "Sitio privado Mall plaza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdgrafico/mallPlaza.git"
+  },
+  "author": "Carlos Fuentes Díaz carlos.disenadorgrafico@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosdgrafico/mallPlaza/issues"
+  },
+  "homepage": "https://github.com/carlosdgrafico/mallPlaza#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1"
+  }
+}

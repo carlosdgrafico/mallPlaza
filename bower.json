@@ -1,0 +1,21 @@
+{
+  "name": "mall",
+  "description": "Sitio privado Mall plaza",
+  "main": "index.js",
+  "authors": [
+    "Carlos Fuentes Díaz carlos.disenadorgrafico@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/carlosdgrafico/mallPlaza",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "^0.100.2",
+    "animate.css": "^3.5.2"
+  }
+}
