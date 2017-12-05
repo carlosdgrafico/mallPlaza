@@ -24,6 +24,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+.icon-down:before {
+  content: "\e919";
+  color: #55565a;
+}
+
+.icon-up:before {
+  content: "\e91a";
+  color: #55565a;
+}
+
+.icon-avatar:before {
+  content: "\e918";
+  color: #55565a;
+}
 .icon-doc-error:before {
   content: "\e900";
   color: #55565a;

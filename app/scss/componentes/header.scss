@@ -1,0 +1,42 @@
+.header{
+	background-color: 	rgba(0, 0, 0, .5);
+	height: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header--logotipo{
+	margin-top: 1.5em;
+	max-width: 200px;
+}
+
+.header--nav--menu{
+	line-height: 90px;
+	text-align: right;
+}
+
+.menu--item{
+	display: inline-block;
+	margin-right: 1em;
+	a{
+		color: #fff;
+		@include font-size(16);
+		@include line-height(22);
+	}
+
+}
+
+.menu--item__user{
+		a{
+			@include font-size(30);
+			@include line-height(22);
+		}
+
+		span:before{
+			color: #fff;
+		}
+	}
+
+
