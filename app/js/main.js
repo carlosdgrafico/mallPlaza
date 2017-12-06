@@ -19,6 +19,23 @@ $(document).ready(function(){
    wow.init();
 
 
+
+
+    // $(".buscador").click(function(){
+
+    //   $("#search").trigger("select");
+
+    // });
+    
+
+    $(".buscador").click(function(){
+
+      $("#search").focus();
+
+    });
+
+
+
 });
 
 
