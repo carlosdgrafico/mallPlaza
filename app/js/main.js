@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  $('.collapsible').collapsible();
+
+
    var wow = new WOW(
      {
        boxClass:     'wow',      // animated element css class (default is wow)
@@ -31,6 +34,19 @@ $(document).ready(function(){
     $(".buscador").click(function(){
 
       $("#search").focus();
+
+    });
+
+
+    $(".question--collapsible li").click(function(){
+
+      if ($(".question--collapsible--icon").hasClass('icon-up')){
+            $(".question--collapsible--icon").removeClass('icon-up');
+            $(".question--collapsible--icon", this).addClass('icon-dow');
+      } else {
+          $(".question--collapsible--icon", this).addClass('icon-up');
+          $(".question--collapsible--icon", this).removeClass('icon-dow');
+      }
 
     });
 
