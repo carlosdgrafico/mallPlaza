@@ -9,3 +9,23 @@
    line-height: $size * 1px;
    line-height: $rem * 1rem;
 }
+
+
+
+
+
+// Utiles para animaciones Hover css
+
+@mixin hideTapHighlightColor() {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+

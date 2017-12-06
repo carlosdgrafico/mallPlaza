@@ -18,4 +18,23 @@ $(document).ready(function(){
 
    wow.init();
 
+
 });
+
+
+
+
+$(document).on("scroll", function(){
+
+    var movimientoMouse = $(document).scrollTop();
+
+    if (movimientoMouse > 300) {
+      $('.mouse-scroll').css("opacity", "0");
+    } else {
+      $('.mouse-scroll').css("opacity", "1");
+    }
+    
+});
+
+
+

@@ -1,0 +1,63 @@
+
+.banner{
+	position: relative;
+	z-index: 1;
+
+
+	&--texto{
+		color: #fff;
+		font-weight: 300;
+		@include font-size(36);
+		@include line-height(49);
+		margin: 0 auto;
+		position: absolute;
+		top: 45%;
+		left: 0;
+		right: 0;
+		text-transform: uppercase;
+		text-shadow: 0px 2px 4px rgba(0,0,0,.5);
+
+	}
+}
+
+
+
+.mouse-scroll {
+    border: 2px solid #fff;
+    border-radius: 13px;
+    display: block;
+    height: 38px;
+    margin: 0 auto 0 auto;
+    position: absolute;
+	left: 0;
+	right: 0;
+	top: 70%;
+	transition: all 1s;
+    width: 22px;
+}
+
+.mouse-scroll span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    height: 4px;
+    margin: 6px auto;
+    width: 4px;
+}
+
+
+@keyframes scroll {
+	0% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: translateY(20px);
+	}
+}
