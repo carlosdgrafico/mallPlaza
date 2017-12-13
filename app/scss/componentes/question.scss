@@ -8,6 +8,7 @@
 	background-size: 1500px;
 	background-position: -200px -1000px;
 	//background-position: 90% 100%; // background se mueve proporcional al viewport
+	position: relative;
 
 	&--titulo{
 		@include font-size(36);
@@ -92,6 +93,49 @@
 		text-align: left;
 		span{
 			opacity: .5;
+		}
+	}
+
+
+	.buscador{
+		border-bottom: none;
+		position: absolute;
+		right: 4%;
+		top: 55px;
+		transition: all .3s;
+		width: 250px;
+
+		@media(max-width: 1200px){
+            right: 1%;
+        }
+
+		@media(min-width: 1400px){
+            right: 9%;
+        }
+
+        @media(min-width: 1600px){
+            right: 13%;
+        }
+
+        @media(min-width: 1800px){
+            right: 19%;
+         }
+
+		input[type="text"] {
+		  color: #fff;
+		  @include font-size(18);
+		}
+
+		input[type="text"]:focus {
+		  width: 250px;
+		}
+		input[type="submit"] {
+		  background: url(../img/lupa-blanca.png) center center no-repeat;
+		  background-size: 50%;
+		}
+
+		input[type="submit"]:hover {
+		  opacity: 0.8;
 		}
 	}
 }

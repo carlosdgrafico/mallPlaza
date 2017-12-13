@@ -31,11 +31,12 @@ $(document).ready(function(){
     // });
     
 
-    $(".buscador").click(function(){
+    $(".buscador__general").click(function(){
 
       $("#search").focus();
 
     });
+
 
 
     $(".question--collapsible li").click(function(){
