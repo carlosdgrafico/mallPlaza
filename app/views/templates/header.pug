@@ -20,7 +20,17 @@ header.header
 						li.menu--item
 							a(href="javascript:;") Gestor documental
 						li.menu--item.menu--item__user
-							a(href="javascript:;") 
+							a.dropdown-button(href="javascript:;" data-activates='user-menu') 
 								span.icon-avatar
 								span.icon-down
+							ul#user-menu.dropdown-content.user--menu
+								.row.u-resetRow
+									.col.s3
+										figure.user--menu--avatar
+											img(src="img/user.jpg", alt="foto de usuario")
+									.col.s9
+										.user--menu--info
+											p.info--nombre Ignacio Undurraga P.
+											p.info--rut 14.554.933 - 0
+										a.btnMall.waves-effect.waves-light(href="javascript:;") Cerrar Sesión
 

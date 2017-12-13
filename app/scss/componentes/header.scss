@@ -20,11 +20,13 @@
 .header--nav--menu{
 	line-height: 90px;
 	text-align: right;
+
 }
 
 .menu--item{
 	display: inline-block;
 	margin-right: 1.5em;
+
 	a{
 		color: #fff;
 		@include font-size(16);
@@ -38,6 +40,7 @@
 }
 
 .menu--item__user{
+	position: relative;
 	a{
 		@include font-size(30);
 		vertical-align: middle;
@@ -62,7 +65,50 @@
 			top: -.3em;
 		}
 	}
+
 }
+
+
+.user--menu{
+		background-color: #fff;
+		border: 1px solid #9B9B9B;
+		border-radius: 5px;
+		display: inline-block;
+		margin-top: 40px;
+		padding: 1em 1em 0 1em;
+		position: absolute;
+		text-align: left;
+		width: 300px !important;
+
+		&--avatar{
+			border-radius: 50%;
+			overflow: hidden;
+			width: 60px;
+		}
+		&--info{
+			border-bottom: 1px solid #9B9B9B;
+			color: $primary-color;
+			@include font-size(16);
+			@include line-height(19);
+			font-weight: 600;
+			margin-left: .5em;
+
+			.info--rut{
+				color: #9B9B9B;
+				@include font-size(14);
+				font-weight: 400;
+				margin: .3em 0 1em 0;
+			}
+		}
+
+		.btnMall{
+			@include font-size(14);
+			margin: -1.5em 0 0 .5em;
+			&:hover{
+				color: 	rgba(255, 255, 255, .7);
+			}
+		}
+	}
 
 
 

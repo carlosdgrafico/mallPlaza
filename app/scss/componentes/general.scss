@@ -1,0 +1,12 @@
+.btnMall{
+	background-color: $primary-color;
+	border-radius: 5px;
+	color: #fff;
+	@include font-size(14);
+	font-weight: 400;
+	padding: .5em 1.5em;
+
+	&:hover{
+		color: 	rgba(255, 255, 255, .7);
+	}
+}
