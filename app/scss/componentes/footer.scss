@@ -1,0 +1,84 @@
+.footer{
+	background-color: $secondary-color;
+	background-image:url("../img/mallPlaza2.svg");
+	background-repeat: no-repeat;
+	background-size: 850px;
+	background-position: 550px -300px;
+	color: #fff;
+	margin-top: 5em;
+	padding-top: 4em;
+
+}
+
+.footer--logotipo{
+	transition: all .3s;
+	width: 150px;
+}
+
+.footer--menu{
+	text-align: left;
+}
+
+.footer--menu--item{
+	@include font-size(14);
+	@include line-height(22);
+	margin-bottom: .5em;
+
+	&__titulo{
+		@include font-size(16);
+		margin-bottom: 1.3em;
+	}
+	a{
+		color: #fff;
+		opacity: .5;
+		transition: all .3s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	&__social{
+		margin-top: 2em;
+		a{
+			@include font-size(16);
+			margin-right: 1em;
+		}
+		span:before{
+			color: #fff;
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+.footer--copy{
+	background-color: 	rgba(0, 0, 0, .3);
+	@include font-size(12);
+	@include line-height(17);
+	height: 90px;
+	line-height: 90px;
+	margin-top: 4em;
+	overflow: hidden;
+	text-align: left;
+
+	.footer--copy--menu, .footer--copy--legal{
+		color: #fff;
+		opacity: .5;
+	}
+
+	.footer--copy--menu{
+		border-right: 1px solid #fff;
+		height: 30px;
+		margin-right: 1.5em;
+		line-height: 30px;
+		padding-right: 1em;
+		transition: all .3s;
+		&:hover{
+			opacity: 1;
+		}
+		&:last-child{
+			border: none;
+		}
+	}
+}
