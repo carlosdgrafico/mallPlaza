@@ -10,7 +10,22 @@ header.header
 						li.menu--item
 							a(href="javascript:;") Inicio
 						li.menu--item
-							a(href="javascript:;") Crear solicitud
+							a.dropdown-button(href="javascript:;" data-activates='solicitud') Crear solicitud
+
+							ul#solicitud.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link.dropMenu--item--link__titulo(href="javascrip:;" disabled) Contratos
+									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Acuerdo de confidencialidad ( NDA)
+									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contratos de servicios
+									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contrato de arriendo
+									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contrato de asociación
+								li.dropMenu--item
+									a.dropMenu--item--link(href="javascrip:;") Consultas generales
+								li.dropMenu--item
+									a.dropMenu--item--link(href="javascrip:;") Poderes y actos asociados
+								li.dropMenu--item
+									a.dropMenu--item--link(href="javascrip:;") Bases promocionales
+
 						li.menu--item
 							a(href="javascript:;") Mis solicitudes
 						li.menu--item
