@@ -95,3 +95,51 @@
 		}
 	}
 }
+
+
+
+.question__informacion{
+	background-color: #fff;
+	background-image: none;
+	color: $secondary-color;
+	margin-top: 5em;
+
+	.collapsible li.active{
+		background-color: 	$primary-color;
+		color: #fff;
+	}
+
+	.collapsible-header{
+
+		span{
+			&:before{
+				color: $primary-color;
+			}
+
+			&.icon-up:before{
+				color: #fff;
+			}
+		}
+
+		&:before{
+			border-radius: 50%;
+			border: 1px solid #fff;
+			background-color: $primary-color;
+			height: 8px;
+			width: 8px;
+		}
+
+	}
+
+	.collapsible-body{
+		@include font-size(14);
+		border: none;
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: left;
+		span{
+			opacity: .5;
+		}
+	}
+
+}
