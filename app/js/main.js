@@ -14,7 +14,29 @@ $(document).ready(function(){
   );
 
 
+  $(function(){
+     $('.stepper').activateStepper({
+        linearStepsNavigation: true, // permitir la navegación haciendo clic en los pasos siguiente y anterior en steppers lineales
+        autoFocusInput: true, //desde 2.1.1, el stepper puede enfocarse automáticamente en la primera entrada de cada paso
+        autoFormCreation: true, //control the auto generation of a form around the stepper (in case you want to disable it)
+        showFeedbackLoader: true, //controlar la generación automática de un formulario alrededor del paso a paso (en caso de que quiera deshabilitarlo)
+        parallel: false // Por defecto no asumimos que el stepper es paralelo, esto se establece en true cuando stepper tiene la clase .parallel
+     });
+  });
+
+
   $('.collapsible').collapsible();
+
+  $('select').material_select();
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
 
 
    var wow = new WOW(
@@ -45,7 +67,7 @@ $(document).ready(function(){
     // });
     
 
-    $(".buscador__general").click(function(){
+    $(".buscador__general, .buscador__form").click(function(){
 
       $("#search").focus();
 

@@ -16,6 +16,7 @@
   ],
   "devDependencies": {
     "materialize": "^0.100.2",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "jquery-validation": "^1.17.0"
   }
 }

@@ -1,0 +1,119 @@
+.solicitud{
+	color: $secondary-color;
+	@include font-size(20);
+	@include line-height(22);
+	font-weight: 400;
+	margin: 90px 0  2em 0;
+	padding: 1em 0;
+	border-bottom: 1px solid #979797;
+
+	.solicitud--titulo--documento{
+		@include font-size(36);
+		@include line-height(49);
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.buscador__form{
+		max-width: 500px;
+
+		input[type="text"]{
+			@include font-size(18);
+		 	height: 58px;
+		}
+
+		input[type="text"]:focus {
+		  	width: 500px;
+		}
+
+		input[type="submit"]:hover {
+		  	opacity: 0.8;
+		}
+	}
+}
+
+
+
+
+
+.formulario{
+	overflow: hidden;
+
+	ul.stepper .step-title:hover {
+	    background-color: transparent;
+	}
+
+	.select-wrapper span.caret{
+		color: $primary-color;
+	}
+
+
+
+	.select-wrapper ul{
+         max-height: 350px;
+
+         li>span{
+            color: $secondary-color;
+         	@include font-size(14);
+         	font-weight: 600;
+
+         }
+
+         .selected, .active{
+            //@include font-light-italic;
+         }
+
+         .optgroup{
+            span{
+              //@include font-bold;
+            }
+         }
+      }
+
+
+	.formulario--iconAdjuntar{
+		background-color: #fff;
+		box-shadow: none;
+		span:before{
+			@include font-size(22);
+			color: $secondary-color;
+		}
+	}
+
+	button{
+		border: none;
+	}
+
+	.btnMall:focus {
+	    outline: none;
+	    background-color: $primary-color;
+	}
+
+	ul.stepper .step.active:before, ul.stepper .step.done:before {
+	    background-color: $primary-color;
+	}
+
+	ul.stepper .step.wrong:before {
+	    content: '\e001';
+	    font-size: 24px;
+	    font-family: 'Material Icons';
+	    background-color: rgba(0,0,0,.3)!important;
+	}
+
+	.step-content{
+		margin: 3em 0 5em 0;
+	}
+
+	ul.stepper .step-actions{
+		display: flex;
+		justify-content: flex-end;
+		margin: 5em 0 0 0;
+	}
+}
+
+.formulario--subTitulo{
+	color: $secondary-color;
+	@include font-size(14);
+	font-weight: 600;
+	margin: 4em 0 .5em 0;
+}

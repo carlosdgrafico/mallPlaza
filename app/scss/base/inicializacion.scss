@@ -5,6 +5,7 @@ html {
 body {
    background-color: #fff;
    color: #414141;
+   display: inline-block;
    font-family: 'Open Sans', sans-serif;
    @include font-size(16);
    @include line-height(24);
@@ -13,7 +14,8 @@ body {
    overflow-x: hidden !important;
    padding: 0;
    position: relative;
-   text-align: center;
+   width: 100%;
+   // text-align: center;
 }
 
 article,

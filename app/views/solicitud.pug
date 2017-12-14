@@ -6,4 +6,21 @@ head
 	include templates/head
 body
 	include templates/header
+
+	.solicitud
+		.u-container
+			.row.u-resetRow
+				.col.s6
+					.solicitud--titulo
+						p.solicitud--titulo--encabezado Nueva solicitud
+						p.solicitud--titulo--documento Modelo NDA y MOU
+				.col.s6
+					.buscador.buscador__form
+						.buscador--container
+							form(action='', autocomplete='on')
+								input#search(name='search', type='text', placeholder="Ingresa la solicutud que buscas")
+								input#search_submit(value='Rechercher', type='submit')
+		
+	include templates/formulario
+
 	include templates/footer
