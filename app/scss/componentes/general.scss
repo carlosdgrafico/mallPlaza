@@ -5,8 +5,39 @@
 	@include font-size(14);
 	font-weight: 400;
 	padding: .5em 1.5em;
+	text-align: center;
 
 	&:hover{
 		color: 	rgba(255, 255, 255, .7);
+	}
+}
+
+
+
+.titulo{
+	@include font-size(22);
+	@include line-height(30);
+	font-weight: 600;
+	margin: 0 auto;
+	text-align: center;
+
+	&--nombre{
+		@include font-size(36);
+		@include line-height(49);
+		span{
+			margin-right: .3em;
+			&:before{
+				color: $primary-color;
+			}
+		}
+	}
+
+
+	&--bajada{
+		font-weight: 400;
+		margin: 0 auto;
+		max-width: 800px;
+		opacity: .5;
+		width: 100%;
 	}
 }

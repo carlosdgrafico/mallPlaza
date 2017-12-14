@@ -1,0 +1,66 @@
+doctype html
+head
+	meta(charset="utf-8")
+	meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+	title Mall Plaza - Mis solicitudes
+	include templates/head
+body
+	include templates/header
+
+	section.banner
+		figure.banner--foto
+			img(src="img/banner-desktop.jpg", alt="")
+		.mouse-scroll
+			span
+	
+	section.misSolicitudes
+		.u-container
+			.titulo
+				h2.titulo--nombre
+					span.icon-mallPlaza
+					| Mis solicitudes
+				p.titulo--bajada Erat tortor ac nibh. Pellentesque facilisis tellus nec dignissim placerat. Proin non nunc justo. Fusce vitae diam eu neque placerat auctor ut.
+
+			.misSolicitudes--header
+				.row
+					.col.s9
+						h3.misSolicitudes--header--titulo Estado de mis solicitudes - 
+							span#header-fecha Jueves 07 Sep 2017
+					.col.s3
+						.misSolicitudes--header--icon
+							a(href="javascrip:;")
+								span.icon-lupa
+							a(href="javascrip:;")
+								span.icon-refresh
+							a(href="javascrip:;")
+								span.icon-descargar
+							a(href="javascrip:;")
+								span.icon-print
+
+			.misSolicitudes--filtros
+				.row
+					.input-field.col.s3
+						select
+							option(value='' disabled selected ) País
+							option(value='1') Chile
+							option(value='2') Perú
+							option(value='3') Argentina
+					.input-field.col.s3
+						input#fecha.datepicker(name="fecha" type="text" required)
+						label(for="fecha") Fecha
+					.input-field.col.s3
+						input#fecha.datepicker(name="fecha" type="text" required)
+						label(for="fecha") Fecha
+					.col.s3
+						a.btnMall.waves-effect.waves-dark(href="javascript:;") Aplicar filtros
+
+			.misSolicitudes--documentos
+				ul.misSolicitudes--documentos--collapsible.collapsible(data-collapsible='accordion')
+					li
+						.collapsible-header
+							| Contrato de servicios Zenith Consulting
+							span.question--collapsible--icon.icon-down
+						.collapsible-body
+							span quis a nisi. Ut sit amet cursus odio. Vivamus odio risus, finibus ac vulputate quis, lacinia vitae tortor. Nunc vitae mollis augue. Suspendisse pharetra volutpat aliquet. Aliquam erat volutpat. Praesent aliquet sit amet nulla in sagittis. Ut ultricies sapien non porta iaculis. Aliquam erat volutpat.
+
+	include templates/footer

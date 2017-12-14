@@ -10,27 +10,6 @@
 	//background-position: 90% 100%; // background se mueve proporcional al viewport
 	position: relative;
 
-	&--titulo{
-		@include font-size(36);
-		@include line-height(49);
-		font-weight: 400;
-
-		span{
-			margin-right: .3em;
-			&:before{
-				color: $primary-color;
-			}
-		}
-	}
-
-	&--subtitulo{
-		margin: 0 auto;
-		max-width: 700px;
-		opacity: .5;
-		width: 100%;
-	}
-
-
 
 	.collapsible{
 		border: none;
