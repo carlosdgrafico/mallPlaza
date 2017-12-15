@@ -101,6 +101,10 @@
 	.btnMall{
 		@include font-size(14);
 		margin: -1.5em 0 0 .5em;
+		width: 140px;
+		height: 40px;
+		line-height: 40px;
+		
 		&:hover{
 			color: 	rgba(255, 255, 255, .7);
 		}

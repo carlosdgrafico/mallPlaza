@@ -33,7 +33,7 @@ body
 							a(href="javascrip:;")
 								span.icon-refresh
 							a(href="javascrip:;")
-								span.icon-descargar
+								span.icon-descargar.tooltipped(data-position="top" data-delay="50" data-tooltip="descargar documento")
 							a(href="javascrip:;")
 								span.icon-print
 
@@ -56,11 +56,401 @@ body
 
 			.misSolicitudes--documentos
 				ul.misSolicitudes--documentos--collapsible.collapsible(data-collapsible='accordion')
-					li
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options')
+							ul#options.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
 						.collapsible-header
-							| Contrato de servicios Zenith Consulting
-							span.question--collapsible--icon.icon-down
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
 						.collapsible-body
-							span quis a nisi. Ut sit amet cursus odio. Vivamus odio risus, finibus ac vulputate quis, lacinia vitae tortor. Nunc vitae mollis augue. Suspendisse pharetra volutpat aliquet. Aliquam erat volutpat. Praesent aliquet sit amet nulla in sagittis. Ut ultricies sapien non porta iaculis. Aliquam erat volutpat.
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options-2')
+							ul#options-2.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
+						.collapsible-header
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__error.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta rechazada")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
+						.collapsible-body
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options-3')
+							ul#options-3.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
+						.collapsible-header
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__warning.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud tiene observaciones")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
+						.collapsible-body
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options-4')
+							ul#options-4.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
+						.collapsible-header
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
+						.collapsible-body
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options-5')
+							ul#options-5.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
+						.collapsible-header
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
+						.collapsible-body
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
+					li.misSolicitudes--documentos--item
+						span.menu--option.icon-elipsis(data-activates='options-6')
+							ul#options-6.dropdown-content.dropMenu
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-edit 
+										| Editar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-lupa
+										| Ver
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-clip 
+										| Adjuntar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-descargar 
+										| Descargar
+								li.dropMenu--item 
+									a.dropMenu--item--link(href="javascrip:;")
+										span.icon-papelera 
+										| Eliminar
+
+						.collapsible-header
+							.row
+								.col.s10
+									.collapsible-header--info
+										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
+										p.info--titulo Contrato de servicios Zenith Consulting
+											span.info--titulo--razon - Social uno
+								.col.s2
+									.collapsible-header--menu
+										.menu--fecha 06 de Sep 2017,
+											span.menu--fecha--hora 11:00
+										span.menu--abrir.icon-arrow-up
+										
+						.collapsible-body
+							.row
+								.col.s11.col.offset-s1
+									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
+								.col.s2.col.offset-s1
+									.collapsible-body--tab
+										p.tab--titulo Fecha
+										p.tab--detalle 06 de Sep 2017,
+											span 11:00am
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Silicitud
+										p.tab--detalle Vigencia de documentos
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Abogado
+										p.tab--detalle Reimundo figueroa
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Aprobador
+										p.tab--detalle Jefe
+								.col.s2 
+									.collapsible-body--tab
+										p.tab--titulo Condición
+										p.tab--detalle Definitivo
+								.col.s12
+									.collapsible-body--botones
+										a.btnMall.btnMall__custom.waves-effect.waves-dark(href="javascript:;") Rechazar
+										a.btnMall.waves-effect.waves-dark(href="javascript:;") Aprobar
 
 	include templates/footer
