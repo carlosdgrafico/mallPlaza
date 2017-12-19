@@ -21,6 +21,12 @@ body
 								input#search(name='search', type='text', placeholder="Ingresa la solicutud que buscas")
 								input#search_submit(value='Rechercher', type='submit')
 		
+	include templates/modal
+
 	include templates/formulario
+
+	a.modal-trigger(href="#crearSolicitud") Modal uno
+	a.modal-trigger(href="#rechazarSolicitud") Modal dos
+
 
 	include templates/footer

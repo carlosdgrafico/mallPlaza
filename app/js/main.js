@@ -1,6 +1,32 @@
 $(document).ready(function(){
 
+  $('.modal').modal();
 
+  // icon hamburguesa
+   $(".header--iconMobile--burger").click(function() {
+    $('this').toggleClass("on");
+   });
+
+   $(".user--menu--cerrar").click(function() {
+    $(".menuLateral").removeClass('u-show');
+   });
+
+
+    // despliega el menu lateral
+  $('.header--iconMobile--burger').on('click', function() {
+      $(".menuLateral").toggleClass('u-show');
+
+      if($('.menuLateral').hasClass('u-show')){
+         setTimeout(function(){
+           $(".menuLateral").css('background-color', 'rgba(255,255,255,1)');
+           $(".menuLateral--item").css('opacity', '1');
+         }, 500);
+      } else {
+         $(".menuLateral").css('background-color', 'rgba(0, 0, 0, 0.5');
+         $(".menuLateral--item").css('opacity', '.3');
+      }
+
+  });
 
 
    $('.menu--option').dropdown({
