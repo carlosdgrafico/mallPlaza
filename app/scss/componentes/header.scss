@@ -1,7 +1,7 @@
 .header{
 	background-color: 	rgba(0, 0, 0, .5);
 	height: 90px;
-	position: absolute;
+	position: fixed; // estaba absolute
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -240,7 +240,7 @@
 	   	transition: all .5s ease-out;
 	   	text-align: right;
 	   	width: 40%;
-	   	z-index: 0;
+	   	z-index: 100; // estaba en 0
 
 	   	@media(max-width: 768px){
             width: 50%;

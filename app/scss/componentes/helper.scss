@@ -64,14 +64,15 @@
 
 
 .u-foto-desktop{
+	display: block;
 	@media(max-width: 480px){
-		display: none;
+		display: none !important;
 	}
 }
 
-.u-foto-desktop-mobile{
+.u-foto-mobile{
 	display: none;
 	@media(max-width: 480px){
-		display: inherit;
+		display: !important;
 	}
 }
