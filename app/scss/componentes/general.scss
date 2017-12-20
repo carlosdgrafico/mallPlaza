@@ -35,9 +35,24 @@
 	margin: 0 auto;
 	text-align: center;
 
+	@media(max-width: 768px){
+        @include font-size(18);
+		@include line-height(22);
+    }
+
+    @media(max-width: 480px){
+        @include font-size(14);
+		@include line-height(20);
+    }
+
 	&--nombre{
 		@include font-size(36);
 		@include line-height(49);
+
+		@media(max-width: 480px){
+	        @include font-size(22);
+			@include line-height(26);
+	    }
 		span{
 			margin-right: .3em;
 			&:before{

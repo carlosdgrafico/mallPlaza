@@ -6,6 +6,11 @@
       	max-height: inherit;
       	overflow: hidden;
       	transition: all .3s ease-out;
+		
+		@media(max-width: 480px){
+	        height: 400px;
+	    }
+
 	}
 
 	.modalMallplaza--cerrar{
@@ -22,6 +27,10 @@
         overflow: hidden !important;
         padding: 0 !important;
         position: relative !important;
+
+        @media(max-width: 480px){
+	        overflow: scroll !important;
+	    }
 	}
 
 	.modalMallplaza--header{
@@ -45,6 +54,16 @@
 				@include font-size(14);
 				opacity: .5;
 			}
+
+			@media(max-width: 480px){
+		        @include font-size(14);
+				@include line-height(18);
+				font-weight: 600;
+
+					span{
+					font-weight: 400;
+				}
+		    }
 		}
 
 		&--contenido, &--icon{
@@ -55,6 +74,12 @@
 			opacity: .5;
 			text-align: left;
 			width: 60%;
+
+			@media(max-width: 480px){
+		       display: block;
+		       margin: 0 auto;
+		       width: 100%;
+		    }
 		}
 
 		&--icon{
@@ -64,6 +89,10 @@
 			span:before{
 				color: $primary-color;
 				@include font-size(140);
+
+				@media(max-width: 480px){
+			       @include font-size(80);
+			    }
 			}
 
 		}
@@ -78,6 +107,11 @@
 
 		.btnMall{
 			margin-left: 1em;
+
+			@media(max-width: 480px){
+				margin:0 0 1em 0;
+		       	width: 100%;
+		    }
 		}
 	}
 

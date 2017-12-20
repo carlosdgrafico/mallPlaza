@@ -61,3 +61,17 @@
     width: 98%;
     position: relative;
 }
+
+
+.u-foto-desktop{
+	@media(max-width: 480px){
+		display: none;
+	}
+}
+
+.u-foto-desktop-mobile{
+	display: none;
+	@media(max-width: 480px){
+		display: inherit;
+	}
+}

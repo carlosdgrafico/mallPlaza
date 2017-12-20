@@ -9,7 +9,8 @@ body
 
 	section.banner
 		figure.banner--foto
-			img(src="img/banner-desktop.jpg", alt="")
+			img.u-foto-desktop(src="img/banner-desktop.jpg", alt="")
+			img.u-foto-mobile(src="img/banner-desktop-mobile.jpg", alt="")
 		.mouse-scroll
 			span
 	
@@ -23,10 +24,10 @@ body
 
 			.misSolicitudes--header
 				.row
-					.col.s9
+					.col.s12.m9
 						h3.misSolicitudes--header--titulo Estado de mis solicitudes - 
 							span#header-fecha Jueves 07 Sep 2017
-					.col.s3
+					.col.s12.m3
 						.misSolicitudes--header--icon
 							a(href="javascrip:;")
 								span.icon-lupa
@@ -39,19 +40,19 @@ body
 
 			.misSolicitudes--filtros
 				.row
-					.input-field.col.s3
+					.input-field.col.s12.m3
 						select
 							option(value='' disabled selected ) País
 							option(value='1') Chile
 							option(value='2') Perú
 							option(value='3') Argentina
-					.input-field.col.s3
+					.input-field.col.s12.m3
 						input#fecha.datepicker(name="fecha" type="text" required)
 						label(for="fecha") Fecha
-					.input-field.col.s3
+					.input-field.col.s12.m3
 						input#fecha.datepicker(name="fecha" type="text" required)
 						label(for="fecha") Fecha
-					.col.s3
+					.col.s12.m3
 						a.btnMall.waves-effect.waves-dark(href="javascript:;") Aplicar filtros
 
 			.misSolicitudes--documentos
@@ -82,12 +83,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s7.m8
 									.collapsible-header--info
 										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s5.m4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -97,24 +98,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo
@@ -148,12 +149,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s8
 									.collapsible-header--info
 										span.info--icon.info--icon__error.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta rechazada")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -163,24 +164,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo
@@ -214,12 +215,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s8
 									.collapsible-header--info
 										span.info--icon.info--icon__warning.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud tiene observaciones")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -229,24 +230,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo
@@ -280,12 +281,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s8
 									.collapsible-header--info
 										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -295,24 +296,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo
@@ -346,12 +347,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s8
 									.collapsible-header--info
 										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -361,24 +362,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo
@@ -412,12 +413,12 @@ body
 
 						.collapsible-header
 							.row
-								.col.s10
+								.col.s8
 									.collapsible-header--info
 										span.info--icon.info--icon__ok.tooltipped(data-position="top" data-delay="50" data-tooltip="Esta solicitud esta lista para ser aprobada")
 										p.info--titulo Contrato de servicios Zenith Consulting
 											span.info--titulo--razon - Social uno
-								.col.s2
+								.col.s4
 									.collapsible-header--menu
 										.menu--fecha 06 de Sep 2017,
 											span.menu--fecha--hora 11:00
@@ -427,24 +428,24 @@ body
 							.row
 								.col.s11.col.offset-s1
 									span.collapsible-body--info metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus, metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus  metus id lacus. Cras eu interdum nulla. Duis sodales, diam ac blandit molestie, massa orci faucibus 
-								.col.s2.col.offset-s1
+								.col.s12.m2.offset-m1
 									.collapsible-body--tab
 										p.tab--titulo Fecha
 										p.tab--detalle 06 de Sep 2017,
 											span 11:00am
-								.col.s2 
+								.col.s12.m2
 									.collapsible-body--tab
 										p.tab--titulo Silicitud
 										p.tab--detalle Vigencia de documentos
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Abogado
 										p.tab--detalle Reimundo figueroa
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Aprobador
 										p.tab--detalle Jefe
-								.col.s2 
+								.col.s12.m2 
 									.collapsible-body--tab
 										p.tab--titulo Condición
 										p.tab--detalle Definitivo

@@ -15,6 +15,14 @@
 	&:hover{
 		width: 190px;
 	}
+
+	@media(max-width: 480px){
+		width: 150px;
+		margin-top: 2.2em;
+			&:hover{
+			width: 130px;
+		}
+	}
 }
 
 .header--nav{
@@ -233,6 +241,15 @@
 	   	text-align: right;
 	   	width: 40%;
 	   	z-index: 0;
+
+	   	@media(max-width: 768px){
+            width: 50%;
+        }
+
+        @media(max-width: 480px){
+        	overflow: scroll;
+	        width: 100%;
+	    }
 
 
 	   .user--menu{

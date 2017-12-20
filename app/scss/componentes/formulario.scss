@@ -17,6 +17,15 @@
 	.buscador__form{
 		max-width: 500px;
 
+		@media(max-width: 768px){
+	        max-width: 200px;
+	    }
+
+	    @media(max-width: 480px){
+	        max-width: 250px;
+	    }
+
+
 		input[type="text"]{
 			@include font-size(18);
 		 	height: 58px;
@@ -24,11 +33,24 @@
 
 		input[type="text"]:focus {
 		  	width: 500px;
+
+		  	@media(max-width: 768px){
+		        width: 200px;
+		    }
+
+		    @media(max-width: 480px){
+		        width: 200px;
+		    }
 		}
 
 		input[type="submit"]:hover {
 		  	opacity: 0.8;
 		}
+
+
+		@media(max-width: 480px){
+	        display: none;
+	    }
 	}
 }
 
@@ -45,6 +67,11 @@
 		right: 2em;
 		top: 1em;
 		z-index: 3;
+
+		@media(max-width: 480px){
+			top: -5em;
+			left: 1em;
+	    }
 	}
 
 	ul.stepper .step-title:hover {
@@ -55,6 +82,13 @@
 		color: $primary-color;
 	}
 
+
+
+	@media(max-width: 480px){
+        ul.stepper{
+        	margin-top: 5em;
+        }
+    }
 
 
 	.select-wrapper ul{
