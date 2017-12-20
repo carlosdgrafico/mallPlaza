@@ -73,6 +73,6 @@
 .u-foto-mobile{
 	display: none;
 	@media(max-width: 480px){
-		display: !important;
+		display: inherit !important;
 	}
 }
