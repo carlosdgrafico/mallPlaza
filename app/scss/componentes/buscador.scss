@@ -5,6 +5,15 @@
 	text-align: right;
 	width: 100%;
 
+	@media(max-width: 768px){
+        max-width: 500px;
+    }
+
+    @media(max-width: 480px){
+        max-width: 250px;
+        margin-top: 3em;
+    }
+
 	.buscador--container {
 	  display: inline-block;
 	  height: 60px;
@@ -31,6 +40,10 @@
 	  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
 	  width: 0;
 	  z-index: 3;
+
+	  @media(max-width: 480px){
+	        @include font-size(18);
+	    }
 	}
 
 	input[type="text"]:focus:hover {
@@ -43,6 +56,13 @@
 	  cursor: text;
 	  width: 740px;
 	  z-index: 1;
+
+	  	@media(max-width: 768px){
+        	width: 450px;
+    	}
+    	@media(max-width: 480px){
+	        width: 200px;
+	    }
 	}
 	input[type="submit"] {
 	  background: url(../img/lupa-gris.png) center center no-repeat;

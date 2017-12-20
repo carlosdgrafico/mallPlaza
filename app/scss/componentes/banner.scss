@@ -18,6 +18,11 @@
 		text-transform: uppercase;
 		text-shadow: 0px 2px 4px rgba(0,0,0,.5);
 
+		@media(max-width: 768px){
+            @include font-size(24);
+			@include line-height(28);
+        }
+
 	}
 }
 

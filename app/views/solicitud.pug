@@ -10,17 +10,23 @@ body
 	.solicitud
 		.u-container
 			.row.u-resetRow
-				.col.s6
+				.col.s12.m6
 					.solicitud--titulo
 						p.solicitud--titulo--encabezado Nueva solicitud
 						p.solicitud--titulo--documento Modelo NDA y MOU
-				.col.s6
+				.col.s12.m6
 					.buscador.buscador__form
 						.buscador--container
 							form(action='', autocomplete='on')
 								input#search(name='search', type='text', placeholder="Ingresa la solicutud que buscas")
 								input#search_submit(value='Rechercher', type='submit')
 		
+	include templates/modal
+
 	include templates/formulario
+
+	a.modal-trigger(href="#crearSolicitud") Modal uno
+	a.modal-trigger(href="#rechazarSolicitud") Modal dos
+
 
 	include templates/footer

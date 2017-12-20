@@ -17,6 +17,11 @@
 		@include line-height(30);
 		font-weight: 600;
 		margin: 0;
+
+		@media(max-width: 480px){
+	        @include font-size(16);
+			@include line-height(20);
+	    }
 	}
 
 	&--icon{
@@ -41,6 +46,10 @@
 				color: $secondary-color;
 			}
 		}
+
+		@media(max-width: 480px){
+	        display: none;
+	    }
 	}
 }
 
@@ -76,6 +85,10 @@
 
 .misSolicitudes--documentos{
 
+	@media(max-width: 480px){
+        margin-top: 6em;
+    }
+
 	.row{
 		width: 100%;
 	}
@@ -100,6 +113,11 @@
 			margin-right: 20px;
 			vertical-align: top;
 			width: 25px;
+
+			@media(max-width: 480px){
+		        margin-bottom: .5em;
+		        display: block;
+		    }
 		}
 
 		.info--icon__ok, 
@@ -126,6 +144,11 @@
 			@include line-height(22);
 			font-weight: 600;
 
+			@media(max-width: 480px){
+		       @include font-size(14);
+				@include line-height(18);
+		    }
+
 			.info--titulo--razon{
 				color: #9D9D9D;
 				display: block;
@@ -143,10 +166,15 @@
 	.collapsible-header--menu{
 		text-align: right;
 
+		@media(max-width: 480px){
+	        margin-top: 2em;
+	    }
+
 		.menu--fecha{
 			color: $secondary-color;
 			@include font-size(14);
 			@include line-height(18);
+
 			&--hora{
 				margin-left: .5em;
 			}
@@ -164,6 +192,7 @@
 			text-align: center;
 			vertical-align: top;
 			width: 25px;
+
 			&:before{
 				color: $secondary-color;
 			}
@@ -204,6 +233,10 @@
 				color: $primary-color;
 			}
 		}
+
+		@media(max-width: 480px){
+	        top: 90px;
+	    }
 	}
 
 	.dropMenu{
@@ -241,6 +274,12 @@
 		@include line-height(20);
 		text-align: left;
 
+		@media(max-width: 480px){
+	        .collapsible-body--tab{
+	        	margin-bottom: 1em;
+	        }
+	    }
+
 	}
 
 	.collapsible-body--info{
@@ -268,6 +307,11 @@
 			margin-left: 1em;
 			padding: 0;
 			width: 220px;
+
+			@media(max-width: 480px){
+		        margin-bottom: 1em;
+		        width: 100%;
+		    }
 		}
 	}
 

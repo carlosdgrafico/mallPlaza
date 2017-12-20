@@ -1,0 +1,57 @@
+.modalMallplaza
+	#crearSolicitud.modal
+		// a.modalMallplaza--cerrar.modal-close(href="#!")
+			span.icon-error
+
+		.modal-content
+			.modalMallplaza--header
+				.titulo
+					h2.titulo--nombre
+						span.icon-mallPlaza
+						| NDA
+
+			.modalMallplaza--body
+				p.modalMallplaza--body--text Está seguro que quiere ejecutar esta operacíon ?
+					span Perderá todos los datos guardados.
+				.modalMallplaza--body--contenido
+					p NDA: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu leo at libero tincidunt iaculis. Phasellus congue vehicula eros, ut porttitor massa gravida ac. In id orci vitae turpis bibendum malesuada in id lectus
+				.modalMallplaza--body--icon
+					span.icon-doc-ok
+
+			.modalMallplaza--footer
+				a.btnMall.btnMall__custom.waves-effect.modal-close(href="#!") Cancelar
+				a.btnMall.waves-effect.modal-close(href="#!") Cambiar mi solicitud
+
+
+
+.modalMallplaza.modalMallplaza__rechazar
+	#rechazarSolicitud.modal
+		// a.modalMallplaza--cerrar.modal-close(href="#!")
+			span.icon-error
+
+		.modal-content
+			.modalMallplaza--header
+				.titulo
+					h2.titulo--nombre
+						span.icon-mallPlaza
+						| Rechazar solicitud
+
+			.modalMallplaza--body
+				p.modalMallplaza--body--text Está seguro que quiere ejecutar esta operacíon ?
+					span Perderá todos los datos guardados.
+				.modalMallplaza--body--contenido
+					.input-field
+						select
+							option(value='' disabled selected ) Selecciona el motivo
+							option(value='1') Motivo uno
+							option(value='2') Motivo dos
+							option(value='3') Motivo tres
+					.input-field
+							textarea#motivo.materialize-textarea
+							label(for="motivo" ) Descripción
+				.modalMallplaza--body--icon
+					span.icon-doc-error
+
+			.modalMallplaza--footer
+				a.btnMall.btnMall__custom.waves-effect.modal-close(href="#!") Cancelar
+				a.btnMall.waves-effect.modal-close(href="#!") Confirmar

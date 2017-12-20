@@ -37,6 +37,11 @@
 		padding-left: 3em;
 		padding-right: 3em;
 
+		@media(max-width: 480px){
+	        @include font-size(14);
+			@include line-height(20);
+	    }
+
 		span{
 			@include font-size(10);
 			position: absolute;
@@ -83,6 +88,10 @@
 		top: 55px;
 		transition: all .3s;
 		width: 250px;
+
+		@media(max-width: 768px){
+	        display: none;
+	    }
 
 		@media(max-width: 1200px){
             right: 1%;

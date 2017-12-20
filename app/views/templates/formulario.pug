@@ -6,43 +6,43 @@
 				.step-title.waves-effect.waves-light Antecedentes Generales
 				.step-content
 					.row
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input#fecha.datepicker(name="fecha" type="text" required)
 							label(for="fecha") Fecha
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected ) País
 								option(value='1') Chile
 								option(value='2') Perú
 								option(value='3') Argentina
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Tipo solicitud
 								option(value='1') Contrato
 								option(value='2') Otro
 								option(value='3') Otro
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Tipo documento
 								option(value='1') Acuerdo de confidencialidad
 								option(value='2') Otro
 								option(value='3') Otro
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="" type="text" required)
 							label(for="nombre_solicitud" ) Nombre solicitud
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Mall
 								option(value='1') Uno
 								option(value='2') Dos
 								option(value='3') Tres
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Nombre del representante
 								option(value='1') Floki
@@ -57,39 +57,39 @@
 				.step-title.waves-effect.waves-light Antecedentes tercero
 				.step-content
 					.row
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="rut" type="number" required)
 							label(for="rut_tercero") Rut tercero
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="razon" type="text" disabled)
 							label(for="razon_social") Razón social tercero
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="dirección" type="text" disabled)
 							label(for="direccion") Dirección
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="represetntante" type="number" required)
 							label(for="rut_representante") Rut representante
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="nombre_representante") Nombre representante
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.datepicker(name="fecha" type="text" required)
 							label(for="fecha_tercero") Fecha personería tercero
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="nombre_notaria") Nombre notaría tercero
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="ciudad_notaria") Ciudad notaría tercero
 
-						.file-field.input-field.col.s4
+						.file-field.input-field.col.s12.m4
 							.btn.formulario--iconAdjuntar
 								span.icon-clip
 								input(type="file")
@@ -104,15 +104,15 @@
 				.step-title.waves-effect.waves-light Antecedentes específicos
 				.step-content
 					.row
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="objeto" type="text" required)
 							label(for="objeto") Objeto del acuerdo
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="descripcion" type="text" required)
 							label(for="descripcion") Descripción del objeto
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Moneda de pago
 								option(value='1') UF
@@ -120,57 +120,57 @@
 								option(value='3') Dolar
 								option(value='3') Euro
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="precio" type="number" required)
 							label(for="precio") Precio
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="precio" type="text" required)
 							label(for="precio") Precio en texto
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="Periodicidad" type="text" required)
 							label(for="Periodicidad") Periodicidad de pago
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="vigencia" type="text" required)
 							label(for="vigencia") Vigencia
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.datepicker(name="fecha" type="text" required)
 							label(for="fecha_termino") Fecha término
 
 					.row
 						p.formulario--subTitulo Relación comunicaciones
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="cargo" type="text" required)
 							label(for="cargo") Cargo comunicaciones proveedor
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="comunicaciones" type="text" required)
 							label(for="comunicaciones") Nombre comunicaciones proveedor
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="email" type="email" required)
 							label(for="email_comunicaciones") Email comunicaciones proveedor
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="cargo" type="text" required)
 							label(for="cargo_comunicaciones") Cargo comunicaciones Mallplaza
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="nombre_comunicaciones") Nombre comunicaciones Mallplaza
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="nombre_comunicaciones") Email comunicaciones Mallplaza
 
 					.row
 						p.formulario--subTitulo Información seguros
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Moneda seguro
 								option(value='1') UF
@@ -178,11 +178,11 @@
 								option(value='3') Dolar
 								option(value='3') Euro
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="monto" type="text" required)
 							label(for="monto") Monto seguro
 
-						.file-field.input-field.col.s4
+						.file-field.input-field.col.s12.m4
 							.btn.formulario--iconAdjuntar
 								span.icon-clip
 								input(type="file")
@@ -191,7 +191,7 @@
 
 					.row
 						p.formulario--subTitulo Información garantía
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							select
 								option(value='' disabled selected) Moneda garantía
 								option(value='1') UF
@@ -199,18 +199,18 @@
 								option(value='3') Dolar
 								option(value='3') Euro
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="monto" type="number" required)
 							label(for="monto_garantia") Monto garantía
 
-						.input-field.col.s4
+						.input-field.col.s12.m4
 							input.validate(name="name" type="text" required)
 							label(for="nombre_representante") Validez garantía
 
 					.row
 						p.formulario--subTitulo Adjuntos
 
-						.file-field.input-field.col.s4
+						.file-field.input-field.col.s12.m4
 							.btn.formulario--iconAdjuntar
 								span.icon-clip
 								input(type="file")

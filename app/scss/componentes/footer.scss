@@ -6,13 +6,24 @@
 	background-position: 550px -300px;
 	color: #fff;
 	margin-top: 5em;
+	margin-bottom: -1em;
 	padding-top: 4em;
+
+	@media(max-width: 480px){
+        .footer--menu{
+        	display: none;
+        }
+    }
 
 }
 
 .footer--logotipo{
 	transition: all .3s;
 	width: 150px;
+
+	@media(max-width: 480px){
+        margin: 0 auto;
+    }
 }
 
 .footer--menu{
@@ -74,11 +85,16 @@
 		line-height: 30px;
 		padding-right: 1em;
 		transition: all .3s;
+		
 		&:hover{
 			opacity: 1;
 		}
 		&:last-child{
 			border: none;
 		}
+
+		@media(max-width: 480px){
+	       display: none;
+	    }
 	}
 }

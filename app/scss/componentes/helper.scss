@@ -48,7 +48,7 @@
 /* Muestra y/o oculta el menu lateral */
 .u-show{
 	//  position: absolute;
-	left: 0 !important;
+	right: 0 !important;
 	//  overflow: hidden;
 }
 
@@ -60,4 +60,18 @@
     max-width: 1200px;
     width: 98%;
     position: relative;
+}
+
+
+.u-foto-desktop{
+	@media(max-width: 480px){
+		display: none;
+	}
+}
+
+.u-foto-desktop-mobile{
+	display: none;
+	@media(max-width: 480px){
+		display: inherit;
+	}
 }
