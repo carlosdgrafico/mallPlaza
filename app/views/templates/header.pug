@@ -14,17 +14,43 @@ header.header
 
 							ul#solicitud.dropdown-content.dropMenu
 								li.dropMenu--item 
-									a.dropMenu--item--link.dropMenu--item--link__titulo(href="javascrip:;" disabled) Contratos
-									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Acuerdo de confidencialidad ( NDA)
-									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contratos de servicios
-									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contrato de arriendo
-									a.dropMenu--item--link.dropMenu--item--link__sub(href="javascrip:;") Contrato de asociación
+									a.dropMenu--item--link(href="javascrip:;") Contratos
+									ul.dropMenu--item--option
+										li.option--item
+											a.option--item--link(href="javascript:;") Acuerdo de confidencialidad ( NDA)
+										li.option--item
+											a.option--item--link(href="javascript:;") Contratos de servicios
+										li.option--item
+											a.option--item--link(href="javascript:;") Contrato de arriendo
+										li.option--item
+											a.option--item--link(href="javascript:;") Contrato de asociación
 								li.dropMenu--item
 									a.dropMenu--item--link(href="javascrip:;") Consultas generales
+									ul.dropMenu--item--option
+										li.option--item
+											a.option--item--link(href="javascript:;") uno
+										li.option--item
+											a.option--item--link(href="javascript:;") dos
+										li.option--item
+											a.option--item--link(href="javascript:;") tres
 								li.dropMenu--item
 									a.dropMenu--item--link(href="javascrip:;") Poderes y actos asociados
+									ul.dropMenu--item--option
+										li.option--item
+											a.option--item--link(href="javascript:;") uno
+										li.option--item
+											a.option--item--link(href="javascript:;") dos
+										li.option--item
+											a.option--item--link(href="javascript:;") tres
 								li.dropMenu--item
 									a.dropMenu--item--link(href="javascrip:;") Bases promocionales
+									ul.dropMenu--item--option
+										li.option--item
+											a.option--item--link(href="javascript:;") uno
+										li.option--item
+											a.option--item--link(href="javascript:;") dos
+										li.option--item
+											a.option--item--link(href="javascript:;") tres
 
 						li.menu--item
 							a(href="javascript:;") Mis solicitudes
@@ -71,18 +97,45 @@ header.header
 			a.menuLateral--item--link(href="javascript:;") Inicio
 		li.menuLateral--item.menuLateral--item__sub
 			a.menuLateral--item--link(href="javascript:;") Crear solicitud
-			ul
-				li
-					a(href="javascrip:;") Acuerdo de confidencialidad ( NDA)
-					a(href="javascrip:;") Contratos de servicios
-					a(href="javascrip:;") Contrato de arriendo
-					a(href="javascrip:;") Contrato de asociación
-					li
-						a(href="javascrip:;") Consultas generales
-					li
-						a(href="javascrip:;") Poderes y actos asociados
-					li
-						a(href="javascrip:;") Bases promocionales
+			ul.sub--menu
+				li.sub--menu--item 
+					a(href="javascrip:;") Contratos
+					ul.dropMenu--mobile
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") Acuerdo de confidencialidad ( NDA)
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") Contrato de servicios
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") Contrato de arriendo
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") Contrato de asociación
+				li.sub--menu--item
+					a(href="javascrip:;") Consultas generales
+					ul.dropMenu--mobile
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") uno
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") dos
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") tres
+				li.sub--menu--item
+					a(href="javascrip:;") Poderes y actos asociados
+					ul.dropMenu--mobile
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") uno
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") dos
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") tres
+				li.sub--menu--item
+					a(href="javascrip:;") Bases promocionales
+					ul.dropMenu--mobile
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") uno
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") dos
+						li.dropMenu--mobile--item
+							a.dropMenu--mobile--item--link(href="javascript:;") tres
 		li.menuLateral--item
 			a.menuLateral--item--link(href="javascript:;") Mis solicitudes
 		li.menuLateral--item

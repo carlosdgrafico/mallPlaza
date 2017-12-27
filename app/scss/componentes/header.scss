@@ -126,24 +126,37 @@
 }
 
 
+.u-mostrar{
+	display: inherit;
+}
+
+
 .dropMenu{
 	border-radius: 5px;
+	min-width: 300px;
 	.dropMenu--item{
-		&:hover{
-			background-color: #fff;
-		}
-		.dropMenu--item--link{
-			color: $secondary-color;
-			@include font-size(16);
-			font-weight: 600;
 
-			&__sub{
+		&--option{
+			display: none;
+			width: 100%;
+			.option--item--link{
 				color: #87888B;
 				@include font-size(14);
 				font-weight: 400;
 				margin-left: 1.5em;
 				padding: .5em 1em;
 			}
+			
+		}
+
+		&:hover{
+			background-color: #fff;
+		}
+
+		.dropMenu--item--link{
+			color: $secondary-color;
+			@include font-size(16);
+			font-weight: 600;
 
 			&:hover{
 				color: $primary-color;
@@ -295,8 +308,9 @@
 	   	}
 
 	   	&--item__sub{
-	   		ul{
+	   		.sub--menu{
 	   			margin: 1.5em 0 2em 0;
+
 	   			a{
 					color: $secondary-color;
 					display: block;
@@ -306,7 +320,18 @@
 	   					color: $primary-color;
 	   				}
 				}
+
+				&--item > a{
+					font-weight: 600;
+					opacity: 1;
+	   			}
 	   		}	
+	   	}
+
+
+	   	.dropMenu--mobile{
+	   		display: none;
+	   		width: 100%;
 	   	}
 
 	   	.btnMall{

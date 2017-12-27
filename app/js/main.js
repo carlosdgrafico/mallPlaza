@@ -2,19 +2,45 @@ $(document).ready(function(){
 
   $('.modal').modal();
 
+  $('.tooltipped').tooltip({delay: 50});
+
+  $('.collapsible').collapsible();
+
+  $('select').material_select();
+
+
+
   // icon hamburguesa
-   $(".header--iconMobile--burger").click(function() {
+  $(".header--iconMobile--burger").click(function() {
     $('this').toggleClass("on");
-   });
+  });
 
-   $(".user--menu--cerrar").click(function() {
+  $(".user--menu--cerrar").click(function() {
     $(".menuLateral").removeClass('u-show');
-   });
+  });
 
 
-    // despliega el menu lateral
+
+   // sub menu header
+  $(".dropMenu--item").hover(function(){
+    $('.dropMenu--item--option', this).slideDown();
+    }, function(){
+    $('.dropMenu--item--option', this).slideUp();
+  });
+
+
+
+  // sub menu / menu lateral
+  $(".sub--menu--item").click(function(){
+    $('.dropMenu--mobile').slideUp();
+    $('.dropMenu--mobile', this).slideDown();
+
+  });
+
+
+  // despliega el menu lateral
   $('.header--iconMobile--burger').on('click', function() {
-      $(".menuLateral").toggleClass('u-show');
+    $(".menuLateral").toggleClass('u-show');
 
       if($('.menuLateral').hasClass('u-show')){
          setTimeout(function(){
@@ -29,7 +55,7 @@ $(document).ready(function(){
   });
 
 
-   $('.menu--option').dropdown({
+  $('.menu--option').dropdown({
       inDuration: 300,
       outDuration: 225,
       constrainWidth: false, // Does not change width of dropdown to that of the activator
@@ -57,22 +83,16 @@ $(document).ready(function(){
 
 
   $(function(){
-     $('.stepper').activateStepper({
-        linearStepsNavigation: true, // permitir la navegación haciendo clic en los pasos siguiente y anterior en steppers lineales
-        autoFocusInput: true, //desde 2.1.1, el stepper puede enfocarse automáticamente en la primera entrada de cada paso
-        autoFormCreation: true, //control the auto generation of a form around the stepper (in case you want to disable it)
-        showFeedbackLoader: true, //controlar la generación automática de un formulario alrededor del paso a paso (en caso de que quiera deshabilitarlo)
-        parallel: false // Por defecto no asumimos que el stepper es paralelo, esto se establece en true cuando stepper tiene la clase .parallel
-     });
+    $('.stepper').activateStepper({
+      linearStepsNavigation: true, // permitir la navegación haciendo clic en los pasos siguiente y anterior en steppers lineales
+      autoFocusInput: true, //desde 2.1.1, el stepper puede enfocarse automáticamente en la primera entrada de cada paso
+      autoFormCreation: true, //control the auto generation of a form around the stepper (in case you want to disable it)
+      showFeedbackLoader: true, //controlar la generación automática de un formulario alrededor del paso a paso (en caso de que quiera deshabilitarlo)
+      parallel: false // Por defecto no asumimos que el stepper es paralelo, esto se establece en true cuando stepper tiene la clase .parallel
+    });
   });
 
-  $('.tooltipped').tooltip({delay: 50});
-
-
-  $('.collapsible').collapsible();
-
-
-  $('select').material_select();
+  
 
 
   $('.datepicker').pickadate({

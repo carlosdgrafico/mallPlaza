@@ -18,6 +18,10 @@
 		font-weight: 600;
 		margin: 0;
 
+		@media(max-width: 768px){
+	        padding-bottom: .5em;
+	    }
+
 		@media(max-width: 480px){
 	        @include font-size(16);
 			@include line-height(20);
@@ -25,7 +29,10 @@
 	}
 
 	&--icon{
+		position: relative;
+    	top: -36px;
 		text-align: right;
+
 		a{
 			@include font-size(18);
 			margin-left: 1em;
@@ -47,9 +54,77 @@
 			}
 		}
 
-		@media(max-width: 480px){
+		@media(max-width: 768px){
 	        display: none;
 	    }
+	}
+
+
+	.buscador__documentos{
+		border-bottom: none;
+		margin: 0 auto;
+		max-width: 200px;
+		text-align: right;
+		width: 100%;
+		display: inline-block;
+		position: relative;
+	    top: 22px;
+	    right: -10px;
+
+
+		input[type="text"] {
+		  background: none;
+		  border: none;
+		  color: #C3C3C3;
+		  cursor: pointer;
+		  display: inline-block;
+		  @include font-size(16);
+		  font-weight: 300;
+		  height: 60px;
+		  outline: none;
+		  padding: 3px;
+		  padding-right: 60px;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+		  width: 0;
+		  z-index: 3;
+		}
+
+		input[type="text"]:focus:hover {
+		  border-bottom: none !important;
+		}
+
+		input[type="text"]:focus {
+		  border-bottom: none !important;
+		  box-shadow: none !important;
+		  cursor: text;
+		  width: 150px;
+		  z-index: 1;
+		}
+		input[type="submit"] {
+		  background: url(../img/lupa-gris.png) center center no-repeat;
+		  background-size: 35%;
+		  border: none;
+		  cursor: pointer;
+		  display: inline-block;
+		  float: right;
+		  height: 67px;
+		  outline: none;
+		  opacity: 0.4;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  text-indent: -10000px;
+		  transition: opacity .4s ease;
+		  width: 63px;
+		  z-index: 2;
+		}
+
+		input[type="submit"]:hover {
+		  opacity: 0.8;
+		}
 	}
 }
 

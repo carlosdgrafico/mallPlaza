@@ -23,14 +23,19 @@ body
 				p.titulo--bajada Erat tortor ac nibh. Pellentesque facilisis tellus nec dignissim placerat. Proin non nunc justo. Fusce vitae diam eu neque placerat auctor ut.
 
 			.misSolicitudes--header
-				.row
-					.col.s12.m9
+				.row.u-resetRow
+					.col.s12.m12.l7
 						h3.misSolicitudes--header--titulo Estado de mis solicitudes - 
 							span#header-fecha Jueves 07 Sep 2017
-					.col.s12.m3
+					.col.s12.m12.l5
 						.misSolicitudes--header--icon
-							a(href="javascrip:;")
-								span.icon-lupa
+							.buscador.buscador__documentos
+								.buscador--container
+									form(action='', autocomplete='on')
+										input#search(name='search', type='text', placeholder="Buscar documento")
+										input#search_submit(value='Rechercher', type='submit')
+							//- a(href="javascrip:;")
+							//- 	span.icon-lupa
 							a(href="javascrip:;")
 								span.icon-refresh
 							a(href="javascrip:;")
