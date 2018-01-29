@@ -134,6 +134,9 @@
 .dropMenu{
 	border-radius: 5px;
 	min-width: 300px;
+	height: auto;
+	max-height: 500px;
+	overflow: scroll;
 	.dropMenu--item{
 
 		&--option{
