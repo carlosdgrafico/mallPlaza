@@ -24,8 +24,13 @@ $(document).ready(function(){
    // sub menu header
   $(".dropMenu--item").hover(function(){
     $('.dropMenu--item--option', this).slideDown();
-    }, function(){
-    $('.dropMenu--item--option', this).slideUp();
+    // }, function(){
+    // $('.dropMenu--item--option', this).slideUp();
+  });
+
+
+  $(".dropdown-button").mouseout(function(){
+      $('.dropMenu--item .dropMenu--item--option').slideUp();
   });
 
 
