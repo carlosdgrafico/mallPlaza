@@ -97,7 +97,7 @@ $(document).ready(function(){
     });
   });
 
-  
+
 
 
   $('.datepicker').pickadate({
@@ -126,6 +126,7 @@ $(document).ready(function(){
      }
    );
 
+
    wow.init();
 
 
@@ -136,7 +137,7 @@ $(document).ready(function(){
     //   $("#search").trigger("select");
 
     // });
-    
+
 
     $(".buscador__general, .buscador__form").click(function(){
 
@@ -194,8 +195,5 @@ $(document).on("scroll", function(){
     } else {
       $('.mouse-scroll').css("opacity", "1");
     }
-    
+
 });
-
-
-
